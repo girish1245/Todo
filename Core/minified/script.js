@@ -1,0 +1,1 @@
+var k=function(a){return 423*a};k(343);
