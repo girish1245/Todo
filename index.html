@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <title>Todo Application</title>
     <link rel="stylesheet" href="node_modules/jquery-ui-dist/jquery-ui.css">
-    <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">-->
     <link rel="stylesheet" href="Core/css/styles.css">
+
+    <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">-->
 </head>
 <body>
+
     <P class="center">Task Manager</P>
     <div class="main">
-    <input id="tasks" class="search" type="text" name="search" placeholder="Enter Task" autocomplete="off">
+    <input id="tasks" class="search" type="text" name="search" placeholder="Enter Task" autocomplete="off" onkeypress="handleKeyPress(event)" maxlength="20">
     <div class="images">
     <a href="#" onclick="addTask()"><img class="addImg" src="Core/images/add.png"></a>
         <a href="#" onclick="clearAll()"><img id="button" class="clearImg" src="Core/images/clear.png"></a>
     </div>
     </div>
+    <div id="image" class="bg0">
 
+    </div>
     <!--<div id="effect" class="contents ui-widget-header ui-corner-all">-->
         <!--<div class="insideContent">Add some text</div>-->
         <!--<div class="border"></div>-->
@@ -33,6 +37,11 @@
         <!--<div class="insideContent">large text</div>-->
         <!--<div class="border"></div>-->
     <!--</div>-->
+
+    <div id="image-container" class="bg">
+
+    </div>
+
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="node_modules/jquery-ui-dist/jquery-ui.js"></script>

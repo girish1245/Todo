@@ -2,10 +2,18 @@
  * Created by Happy on 5/14/2017.
  */
 
+function handleKeyPress(e){
+    var key=e.keyCode || e.which;
+    if (key==13){
+        addTask();
+    }
+};
+
 
 var clearAll = () => {
     let options = {};
-    $("#effect").effect( 'fold', options, 100, removeAll());
+    $("#effect").effect( 'blind', options, 600, removeAll);
+
 };
 
 /*$("#button").on( "click", function() {
@@ -82,7 +90,7 @@ function selected(event) {
 
     }
 
-    if(event.srcElement.localName !== 'del') {
+    if((event.srcElement.localName !== 'del' || event.path[0].firstElementChild.localName !== 'del') && event.path[0].firstElementChild == null) {
         event.path[0].className = 'selected';
         event.path[0].innerHTML = '<del>' + event.path[0].innerHTML + '</del>'
     }
@@ -91,5 +99,7 @@ function selected(event) {
 
 
 function removeAll() {
-    document.getElementById('effect').remove();
+    setTimeout(function() {
+        document.getElementById('effect').remove();
+    }, 1000);
 }
