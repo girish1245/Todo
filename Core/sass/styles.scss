@@ -120,8 +120,6 @@ input[type=radio] {
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
-
-
 }
 
 .border {
@@ -138,6 +136,27 @@ input[type=radio] {
  // color: #FFF;
 }
 
+.selected {
+  width:585px;
+  color: red;
+  cursor:pointer;
+  margin:15px 0 15px 10px;
+  font-family: 'Gill Sans MT Condensed';
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: left;
+  //box-shadow: inset 470px 0 0 0 #99ff99;
+  background-color:#99ff99;
+  background: url('../images/delete.png') no-repeat;
+  background-position: 500px 0px;
+  background-size: 30px 30px;
+ // color: #FFF;
+}
+
 
 p.task {
   background-color: azure;
@@ -146,7 +165,6 @@ p.task {
   display: inline;
   font-family: 'Gill Sans MT Condensed';
   font-size:25px;
-
 
 }
 
