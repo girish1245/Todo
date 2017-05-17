@@ -3,19 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Todo Application</title>
+    <link rel="stylesheet" href="node_modules/jquery-ui-dist/jquery-ui.css">
+    <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">-->
     <link rel="stylesheet" href="Core/css/styles.css">
 </head>
 <body>
     <P class="center">Task Manager</P>
     <div class="main">
-    <input class="search" type="text" name="search" placeholder="Enter Task" autocomplete="off">
+    <input id="tasks" class="search" type="text" name="search" placeholder="Enter Task" autocomplete="off">
     <div class="images">
-    <img class="addImg" src="Core/images/add.png">
-    <img class="clearImg" src="Core/images/clear.png">
-    <span class="clearImg"></span>
+    <a href="#" onclick="addTask()"><img class="addImg" src="Core/images/add.png"></a>
+        <a href="#" onclick="clearAll()"><img id="button" class="clearImg" src="Core/images/clear.png"></a>
     </div>
     </div>
-    <script src="Core/minified/script.js"></script>
+    <div id="effect" class="contents ui-widget-header ui-corner-all">
+        <div class="insideContent">Add some text</div>
+        <div class="border"></div>
+
+        <div class="insideContent">Some other text</div>
+        <div class="border"></div>
+
+        <div class="insideContent">Quite a large text</div>
+        <div class="border"></div>
+
+        <div class="insideContent">A lot more text</div>
+        <div class="border"></div>
+
+        <div class="insideContent">large text</div>
+        <div class="border"></div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/jquery-ui-dist/jquery-ui.js"></script>
+    <script src="Core/js/es5-script.js"></script>
     <script src="//localhost:35729/livereload.js"></script>
 </body>
 </html>
