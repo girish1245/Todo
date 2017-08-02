@@ -14,7 +14,7 @@ html, body {
 
 
 input[type=text] {
- // margin-left:90px;
+  margin-left:90px;
   font-family: "Gill Sans MT Condensed";
   font-size: 20px;
   margin:auto;
@@ -34,13 +34,12 @@ input[type=text] {
 .main {
   text-align: center;
   margin-left:150px;
-
-
 }
+
 .images {
- // margin:auto;
+  // margin:auto;
   display:inline;
-//  text-align: center;
+  //  text-align: center;
   overflow: visible;
   //vertical-align: sub;
 }
@@ -50,7 +49,7 @@ input[type=text]:focus {
 }
 
 .addImg {
- // vertical-align: ;
+  // vertical-align: ;
   cursor:pointer;
   display:inline;
   padding-left:20px;
@@ -110,8 +109,8 @@ input[type=radio] {
 .insideContent{
   width:585px;
   color: black;
- // background: #cccccc;
- // padding: 15px 20px;
+  // background: #cccccc;
+  // padding: 15px 20px;
   margin:15px 0 15px 10px;
   font-family: 'Gill Sans MT Condensed';
   font-size: 25px;
@@ -139,7 +138,7 @@ input[type=radio] {
   background: url('../images/delete.png') no-repeat;
   background-position: 500px 0px;
   background-size: 30px 30px;
- // color: #FFF;
+  // color: #FFF;
 }
 
 .selected {
@@ -160,7 +159,7 @@ input[type=radio] {
   background: url('../images/delete.png') no-repeat;
   background-position: 500px 0px;
   background-size: 30px 30px;
- // color: #FFF;
+  // color: #FFF;
 }
 
 
@@ -170,10 +169,10 @@ p.task {
   padding-left:10px;
   display: inline;
   font-family: 'Gill Sans MT Condensed';
-  font-size:25px;
+  font-size:40px;
 
 }
 
 p.task:hover {
- // background-color: blanchedalmond;
+  // background-color: blanchedalmond;
 }
