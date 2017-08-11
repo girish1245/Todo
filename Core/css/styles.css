@@ -1,1 +1,104 @@
-html,body{height:100%;background-color:#cccccc}.center{text-align:center;margin-top:60px;font-family:"Gill Sans MT Condensed";font-size:50px;text-decoration:underline}input[type=text]{margin-left:90px;font-family:"Gill Sans MT Condensed";font-size:20px;margin:auto;overflow:visible;display:inline-block;width:300px;box-sizing:border-box;border:2px solid #ccc;border-radius:10px;background-color:whitesmoke;padding:12px 20px 12px 20px;-webkit-transition:width 0.4s ease-in-out;transition:width 0.4s ease-in-out}.main{text-align:center;margin-left:150px}.images{display:inline;overflow:visible}input[type=text]:focus{width:50%}.addImg{cursor:pointer;display:inline;padding-left:20px;height:25px;width:25px}.clearImg{cursor:pointer;vertical-align:sub;display:inline;padding-left:20px;height:40px;width:40px}input[type=radio]{font-size:16px;background-color:white;background-image:url("../images/delete.png");background-position:10px 10px;background-repeat:no-repeat;padding:12px 20px 12px 40px}.contents{width:600px;text-align:left;margin:auto;margin-top:50px;border:1px solid black;background-color:azure;border-radius:5px}.insideContent{width:585px;color:black;margin:15px 0 15px 10px;font-family:'Gill Sans MT Condensed';font-size:25px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;border-radius:2px;display:inline-block;text-align:left;cursor:pointer;box-shadow:inset 0 0 0 0  #99ff99;-webkit-transition:all ease 0.5s;-moz-transition:all ease 0.5s;transition:all ease 0.5s}.border{border-bottom:1px solid black}.insideContent:hover{cursor:pointer;box-shadow:inset 470px 0 0 0 #99ff99;background:url("../images/delete.png") no-repeat;background-position:500px 0px;background-size:30px 30px}.selected{width:585px;color:red;cursor:pointer;margin:15px 0 15px 10px;font-family:'Gill Sans MT Condensed';font-size:25px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;border-radius:2px;display:inline-block;text-align:left;background-color:#99ff99;background:url("../images/delete.png") no-repeat;background-position:500px 0px;background-size:30px 30px}p.task{background-color:azure;border-radius:5px;padding-left:10px;display:inline;font-family:'Gill Sans MT Condensed';font-size:40px}
+/* line 1, ../sass/styles.scss */
+html, body { height: 100%; background-color: #cccccc; }
+
+/* line 6, ../sass/styles.scss */
+*:focus { outline: none; }
+
+/* line 11, ../sass/styles.scss */
+.center { text-align: center; margin: 60px auto; font-family: "Gill Sans MT Condensed"; font-size: 50px; text-decoration: underline; }
+
+/* line 21, ../sass/styles.scss */
+input[type=text] { font-family: "Gill Sans MT Condensed"; font-size: 20px; margin: auto; overflow: visible; display: inline-block; width: 40%; box-sizing: border-box; border: 2px solid #ccc; border-radius: 10px; background-color: whitesmoke; padding: 12px 20px 12px 20px; -webkit-transition: width 0.4s ease-in-out; transition: width 0.4s ease-in-out; }
+
+/* line 38, ../sass/styles.scss */
+.main { text-align: center; margin-left: 150px; }
+
+/* line 43, ../sass/styles.scss */
+.images { display: inline; overflow: visible; }
+
+/* line 51, ../sass/styles.scss */
+input[type=text]:focus { box-shadow: 0 0 20px black; }
+
+/* line 56, ../sass/styles.scss */
+.addImg { cursor: pointer; display: inline; padding-left: 20px; height: 25px; width: 25px; }
+
+/* line 65, ../sass/styles.scss */
+.addImg:focus { outline-style: double; }
+
+/* line 69, ../sass/styles.scss */
+.clearImg { cursor: pointer; vertical-align: top; display: inline; padding-left: 20px; height: 40px; width: 40px; }
+
+/* line 83, ../sass/styles.scss */
+input[type=radio] { font-size: 16px; background-color: white; background-image: url("../images/delete.png"); background-position: 10px 10px; background-repeat: no-repeat; padding: 12px 20px 12px 40px; }
+
+/* line 92, ../sass/styles.scss */
+.contents { width: 600px; text-align: left; margin: auto; margin-top: 50px; border: 1px solid black; border: 1px solid black; background-color: azure; border-radius: 5px; }
+
+/*
+.insideContent{ border-bottom: 3px solid #cccccc; border-radius:5px; box-shadow: inset 0 0 0 0 #C14800; -webkit-transition: all ease 0.8s; -moz-transition: all ease 0.8s; transition: all ease 0.8s; background-color: azure; border-radius:5px; padding-left:10px; display: inline; font-family: 'Gill Sans MT Condensed'; font-size:25px;
+}
+*/
+/* line 121, ../sass/styles.scss */
+.insideContent { width: 585px; color: black; margin: 15px 0 15px 10px; font-family: 'Gill Sans MT Condensed'; font-size: 25px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; border-radius: 2px; display: inline-block; text-align: -webkit-center; cursor: pointer; box-shadow: inset 0 0 0 0  #99ff99; -webkit-transition: all ease 0.5s; -moz-transition: all ease 0.5s; transition: all ease 0.5s; }
+
+/* line 143, ../sass/styles.scss */
+.border { border-top: 1px solid black; }
+
+/* line 148, ../sass/styles.scss */
+.insideContent:hover { cursor: pointer; box-shadow: inset 470px 0 0 0 #99ff99; background: url("../images/delete.png") no-repeat; background-position: 500px 0px; background-size: 30px 30px; }
+
+/* line 157, ../sass/styles.scss */
+.selected { width: 585px; color: red; cursor: pointer; margin: 15px 0 15px 10px; font-family: 'Gill Sans MT Condensed'; font-size: 25px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; border-radius: 2px; display: inline-block; text-align: left; background-color: #99ff99; background: url("../images/delete.png") no-repeat; background-position: 500px 0px; background-size: 30px 30px; }
+
+/* line 179, ../sass/styles.scss */
+p.task { background-color: azure; border-radius: 5px; padding-left: 10px; display: inline; font-family: 'Gill Sans MT Condensed'; font-size: 25px; }
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) { /* line 200, ../sass/styles.scss */
+  input[type=text] { font-family: "Gill Sans MT Condensed"; font-size: 20px; overflow: visible; display: inline-block; width: 60%; box-sizing: border-box; border: 2px solid #ccc; border-radius: 10px; background-color: whitesmoke; padding: 12px 20px 12px 20px; -webkit-transition: width 0.4s ease-in-out; transition: width 0.4s ease-in-out; }
+  /* line 216, ../sass/styles.scss */
+  .main { margin-left: 35px; }
+  /* line 220, ../sass/styles.scss */
+  .addImg { cursor: pointer; display: inline; padding-left: 10px; height: 18px; width: 20px; }
+  /* line 228, ../sass/styles.scss */
+  .clearImg { cursor: pointer; vertical-align: sub; display: inline; padding-left: 10px; height: 30px; width: 30px; }
+  /* line 237, ../sass/styles.scss */
+  *:focus { outline: none; }
+  /* line 241, ../sass/styles.scss */
+  input[type=text]:focus { width: 60%; box-shadow: 0 0 20px black; }
+  /* line 246, ../sass/styles.scss */
+  .contents { width: 280px; text-align: left; margin: auto; margin-top: 50px; border: 1px solid black; background-color: azure; border-radius: 5px; }
+  /* line 256, ../sass/styles.scss */
+  .insideContent { width: 270px; color: coral; margin: 15px 0 15px 10px; font-family: 'Gill Sans MT Condensed'; font-size: 18px; font-weight: bold; letter-spacing: 1px; text-transform: capitalize; border-radius: 2px; display: inline-block; text-align: -webkit-center; cursor: pointer; box-shadow: inset 0 0 0 0 #99ff99; -webkit-transition: all ease 0.5s; -moz-transition: all ease 0.5s; transition: all ease 0.5s; }
+  /* line 275, ../sass/styles.scss */
+  .border { border-bottom: 1px solid black; }
+  /* line 280, ../sass/styles.scss */
+  .insideContent:hover { cursor: pointer; box-shadow: inset 470px 0 0 0 #99ff99; background: url("../images/delete.png") no-repeat; background-position: 500px 0px; background-size: 30px 30px; }
+  /* line 289, ../sass/styles.scss */
+  .selected { width: 260px; color: red; cursor: pointer; margin: 15px 0 15px 10px; font-family: 'Gill Sans MT Condensed'; font-size: 18px; font-weight: bold; letter-spacing: 1px; text-transform: lowercase; border-radius: 2px; display: inline-block; text-align: left; background-color: #99ff99; background: url("../images/delete.png") no-repeat; background-position: 230px 2px; background-size: 20px 20px; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) { /* line 318, ../sass/styles.scss */
+  input[type=text] { font-family: "Gill Sans MT Condensed"; font-size: 20px; overflow: visible; display: inline-block; width: 60%; box-sizing: border-box; border: 2px solid #ccc; border-radius: 10px; background-color: whitesmoke; padding: 12px 20px 12px 20px; -webkit-transition: width 0.4s ease-in-out; transition: width 0.4s ease-in-out; }
+  /* line 334, ../sass/styles.scss */
+  .main { margin-left: 35px; }
+  /* line 338, ../sass/styles.scss */
+  .addImg { cursor: pointer; display: inline; padding-left: 10px; height: 18px; width: 20px; }
+  /* line 346, ../sass/styles.scss */
+  .clearImg { cursor: pointer; vertical-align: sub; display: inline; padding-left: 10px; height: 30px; width: 30px; }
+  /* line 355, ../sass/styles.scss */
+  *:focus { outline: none; }
+  /* line 359, ../sass/styles.scss */
+  input[type=text]:focus { width: 60%; box-shadow: 0 0 20px black; }
+  /* line 364, ../sass/styles.scss */
+  .contents { width: 280px; text-align: left; margin: auto; margin-top: 50px; border: 1px solid black; background-color: azure; border-radius: 5px; }
+  /* line 374, ../sass/styles.scss */
+  .insideContent { width: 270px; color: coral; margin: 15px 0 15px 10px; font-family: 'Gill Sans MT Condensed'; font-size: 18px; font-weight: bold; letter-spacing: 1px; text-transform: capitalize; border-radius: 2px; display: inline-block; text-align: -webkit-center; cursor: pointer; box-shadow: inset 0 0 0 0 #99ff99; -webkit-transition: all ease 0.5s; -moz-transition: all ease 0.5s; transition: all ease 0.5s; }
+  /* line 393, ../sass/styles.scss */
+  .border { border-bottom: 1px solid black; }
+  /* line 398, ../sass/styles.scss */
+  .insideContent:hover { cursor: pointer; box-shadow: inset 470px 0 0 0 #99ff99; background: url("../images/delete.png") no-repeat; background-position: 500px 0px; background-size: 30px 30px; }
+  /* line 407, ../sass/styles.scss */
+  .selected { width: 260px; color: red; cursor: pointer; margin: 15px 0 15px 10px; font-family: 'Gill Sans MT Condensed'; font-size: 18px; font-weight: bold; letter-spacing: 1px; text-transform: lowercase; border-radius: 2px; display: inline-block; text-align: left; background-color: #99ff99; background: url("../images/delete.png") no-repeat; background-position: 230px 2px; background-size: 20px 20px; } }
+@media (min-width: 480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width: 600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width: 801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width: 1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width: 1281px) { /* hi-res laptops and desktops */ }
