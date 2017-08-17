@@ -1,5 +1,5 @@
 /* line 1, ../sass/styles.scss */
-html, body { height: 100%; background-color: #cccccc; }
+html, body { height: 100%; background-color: lightblue; }
 
 /* line 6, ../sass/styles.scss */
 *:focus { outline: none; }
